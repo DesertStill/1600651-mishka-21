@@ -45,28 +45,29 @@
           </ul>
         </div>
       </nav>
-      <div class="intro">
-        <p class="intro__title">Милые штуки ручной работы для дома</p>
-        <div class="shop-navigation">
-          <ul class="shop-navigation__list product-list">
-            <li class="product-list__item">
-              <a href="catalog.html#">
-                Предметы интерьера
-              </a>
-            </li>
-            <li class="product-list__item">
-              <a href="catalog.html#">
-                Детские игрушки
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
     </header>
     <main class="page-main">
 
+      <!--
       <h1 class="visually-hidden">«Мишка» — магазин милых текстильных изделий для всей семьи</h1>
 
+      Пока что смущает не то, что заголовок первого уровня обёрнут в секцию - это хорошо (аналогично на страницах каталога и формы сделала), а то, что я должна именовать его как categories__title, в то время как по смыслу вижу, что вся страница при это остаётся без тайтла, а мне прям хочется выделить её как-то в отличие от каталога и формы, в то же время есть тег title, которым я уже назвала страницу. Поэтому и сомнений столько, может сейчас самый ок вариант (с h1 в секции "categories")? -->
+
+      <section class="categories">
+        <h1 class="categories__title">Милые штуки ручной работы для дома</h1>
+        <ul class="categories__list">
+          <li class="categories__item categories__item--interior">
+            <a href="catalog.html#">
+              Предметы интерьера
+            </a>
+          </li>
+          <li class="categories__item categories__item--toy">
+            <a href="catalog.html#">
+              Детские игрушки
+            </a>
+          </li>
+        </ul>
+      </section>
       <section class="promo">
         <h2 class="promo__item">Вязаные корзинки</h2>
         <h3 class="promo__title">Товар недели</h3>
@@ -169,7 +170,11 @@
         </div>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__link-icon" width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-copyright"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
