@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Каталог товаров | Магазин милых вещиц «Мишка»</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class="page-header__logo" href="index.html">
+        <img src="img/logo.svg" width="86" height="35" alt="Логотип магазина «Мишка»">
+      </a>
+      <nav class="main-navigation">
+        <button class="main-navigation__toggle" type="button"><span class="visually-hidden">Открыть меню</span></button>
+        <div class="main-navigation__wrapper">
+          <ul class="main-navigation__list site-list">
+            <li class="site-list__item site-list__item--active">
+              <a>
+                Каталог товаров
+              </a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">
+                Вязание на заказ
+              </a>
+            </li>
+          </ul>
+          <ul class="main-navigation__list user-list">
+            <li class="user-list__item">
+              <form class="user-list__form" action="https://echo.htmlacademy.ru" method="get">
+                <label class="visually-hidden" for="site-search">Поиск по сайту</label>
+                <input type="search" id="site-search" name="search">
+                <svg class="user-list__form-icon" width="18" height="18">
+                  <use xlink:href="img/sprite.svg#icon-search"></use>
+                </svg>
+              </form>
+            </li>
+            <li class="user-list__item">
+              <a class="user-list__cart" href="#!">
+                Корзина: пока пуста
+                <svg class="user-list__cart-icon" width="21" height="18">
+                  <use xlink:href="img/sprite.svg#icon-cart"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-catalog">
+      <section class="intro">
+        <h1 class="intro__title">Каталог товаров</h1>
+      </section>
+      <section class="catalog">
+        <h2 class="visually-hidden">Наш ассортимент: аксессуары, детские игрушки, предметы интерьера и другое</h2>
+        <ul class="catalog__list">
+          <li class="catalog__item">
+            <article class="product">
+              <a href="#!">
+                <img class="product__image" src="img/hare.jpg" width="260" height="195" alt="Вязаный заяц бирюзового цвета">
+              </a>
+              <a href="#!">
+                <h3 class="product__title">Зайчик-попрыгайчик</h3>
+              </a>
+              <p class="product__description">Рост 30 см, вес 200 г</p>
+              <p class="product__buy-price">
+                1200 руб.
+                <button class="product__button button" type="button">
+                  <svg class="product__cart-icon" width="21" height="18">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </button>
+              </p>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="product">
+              <a href="#!">
+                <img class="product__image" src="img/basket.jpg" width="260" height="195" alt="Бело-оранжевая корзина с бельём">
+              </a>
+              <a href="#!">
+                <h3 class="product__title">Корзинка для белья</h3>
+              </a>
+              <p class="product__description">Диаметр 15 см, высота 10 см</p>
+              <p class="product__buy-price">
+                690 руб.
+                <button class="product__button button" type="button">
+                  <svg class="product__cart-icon" width="21" height="18">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </button>
+              </p>
+            </article>
+          </li>
+          <li class="catalog__item">
+            <article class="product">
+              <a href="#!">
+                <img class="product__image" src="img/big-basket.jpg" width="260" height="195" alt="Кремово-салатовая корзина с игрушками">
+              </a>
+              <a href="#!">
+                <h3 class="product__title">Большая корзинка для игрушек</h3>
+              </a>
+              <p class="product__description">Диаметр 30 см, высота 30 см</p>
+              <p class="product__buy-price">
+                1500 руб.
+                <button class="product__button button" type="button">
+                  <svg class="product__cart-icon" width="21" height="18">
+                    <use xlink:href="img/sprite.svg#icon-cart"></use>
+                  </svg>
+                </button>
+              </p>
+            </article>
+          </li>
+        </ul>
+      </section>
+      <article class="video">
+        <h2 class="video__title">Процесс производства</h2>
+        <div class="video__image-wrapper">
+          <img src="img/video.jpg" width="260" height="150" alt="Корзинка мятно-серого цвета">
+          <button class="video__button button" aria-label="Воспроизвести видео" type="button">&rtrif;</button>
+        </div>
+        <p class="video__description">
+          По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.
+        </p>
+        <a class="video__promo-button button" href="#!">
+          Сделать заказ
+        </a>
+      </article>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__wrapper">
+        <div class="page-footer__social social">
+          <ul class="social__list">
+            <li class="social__item">
+              <a class="social__link social__link--instagram" href="https://www.instagram.com/htmlacademy">Инстаграм</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--facebook" href="https://www.facebook.com/htmlacademy">Фейсбук</a>
+            </li>
+            <li class="social__item">
+              <a class="social__link social__link--twitter" href="https://twitter.com/htmlacademy_ru">Твиттер</a>
+            </li>
+          </ul>
+        </div>
+        <div class="page-footer__copyright copyright">
+          <p class="copyright__text">Разработано</p>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__link-icon" width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-copyright"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+  </body>
+  </html>
