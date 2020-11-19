@@ -1,0 +1,35 @@
+.promo {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 24px;
+  color: $dark;
+}
+
+.promo__title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-align: left;
+  text-transform: uppercase;
+  color: $light-green;
+}
+
+.promo__item {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 30px;
+  text-align: center;
+  color: $black;
+}
+
+.promo__price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  text-align: center;
+}
+
+.promo__button {
+  font-size: 18px;
+  line-height: 20px;
+}

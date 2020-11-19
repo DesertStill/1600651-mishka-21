@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>Магазин милых вещиц «Мишка»</title>
+    <link rel="stylesheet" href="css/style.css">
   </head>
   <body class="page__body">
     <header class="page-header">
@@ -47,22 +48,16 @@
       </nav>
     </header>
     <main class="page-main">
-
-      <!--
-      <h1 class="visually-hidden">«Мишка» — магазин милых текстильных изделий для всей семьи</h1>
-
-      Пока что смущает не то, что заголовок первого уровня обёрнут в секцию - это хорошо (аналогично на страницах каталога и формы сделала), а то, что я должна именовать его как categories__title, в то время как по смыслу вижу, что вся страница при это остаётся без тайтла, а мне прям хочется выделить её как-то в отличие от каталога и формы, в то же время есть тег title, которым я уже назвала страницу. Поэтому и сомнений столько, может сейчас самый ок вариант (с h1 в секции "categories")? -->
-
       <section class="categories">
         <h1 class="categories__title">Милые штуки ручной работы для дома</h1>
         <ul class="categories__list">
           <li class="categories__item categories__item--interior">
-            <a href="catalog.html#">
+            <a class="categories__link" href="catalog.html#">
               Предметы интерьера
             </a>
           </li>
           <li class="categories__item categories__item--toy">
-            <a href="catalog.html#">
+            <a class="categories__link" href="catalog.html#">
               Детские игрушки
             </a>
           </li>
@@ -87,7 +82,7 @@
           </tr>
         </table>
         <img class="promo__image" src="img/baskets.jpg" width="260" height="315" alt="Корзинки мятно-серого цвета">
-        <p>Цена: 990 руб.</p>
+        <p class="promo__price">Цена: 990 руб.</p>
         <button class="promo__button button" type="button">Заказать</button>
       </section>
       <section class="about">
@@ -119,7 +114,7 @@
           <blockquote class="reviews__item">
             <div class="reviews__author-info">
               <p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
-              <cite class="reviews__author-name">Анастасия Красильникова @misssssiskras</cite>
+              <cite class="reviews__author-name">Анастасия Красильникова <span class="reviews__author-nickname">@misssssiskras</span></cite>
             </div>
           </blockquote>
         </div>

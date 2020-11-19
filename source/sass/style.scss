@@ -1,1 +1,14 @@
-// Начните писать стили здесь
+@import "variables.scss";
+@import "global.scss";
+@import "grid.scss";
+@import "blocks/about.scss";
+@import "blocks/button.scss";
+@import "blocks/categories.scss";
+@import "blocks/contacts.scss";
+@import "blocks/main-navigation.scss";
+@import "blocks/page-header.scss";
+@import "blocks/page-footer.scss";
+@import "blocks/page-main.scss";
+@import "blocks/promo.scss";
+@import "blocks/reviews.scss";
+@import "blocks/visually-hidden.scss";

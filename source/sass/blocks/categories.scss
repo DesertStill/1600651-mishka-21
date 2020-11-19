@@ -1,0 +1,33 @@
+.categories {
+  background: url("../img/toys.jpg") no-repeat center $light-grey;
+}
+
+.categories__title {
+  font-weight: 700;
+  font-size: 27px;
+  line-height: 30px;
+  text-align: center;
+}
+
+//.categories__list {}
+
+.categories__item {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  text-align: left;
+
+  &--interior {
+    background: $light-green;
+  }
+
+  &--toy {
+    background: $extra-green;
+  }
+}
+
+.categories__link {
+  display: block;
+  text-decoration: none;
+  color: $white;
+}
