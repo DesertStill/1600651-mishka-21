@@ -45,97 +45,96 @@
           </ul>
         </div>
       </nav>
-      <div class="heading">
-        Вязание на заказ
-      </div>
     </header>
     <main class="page-form">
-
-      <h1 class="visually-hidden">Оформление заказа</h1>
-
-      <section class="ordering">
-        <h2 class="visually-hidden">Создание вязаного шедевра</h2>
-        <p class="ordering__subtitle">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="ordering__form form-set" action="https://echo.htmlacademy.ru" method="post">
-          <fieldset class="form-set__item">
+      <section class="intro">
+        <h1 class="intro__title">Вязание на заказ</h1>
+      </section>
+      <section class="order">
+        <h2 class="visually-hidden">Оформление заказа</h2>
+        <p class="order__text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="order__form form-set" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="form-set__group">
             <legend class="form-set__title">Тип</legend>
-            <label class="form-set__label">
-              <input class="form-set__item form-set__item--radio" type="radio" name="type" value="accessory" checked>
-              Аксессуар для интерьера
-            </label>
-            <label class="form-set__label">
-              <input class="form-set__item form-set__item--radio" type="radio" name="type" value="toy">
-              Детская игрушка
-            </label>
+            <ul class="form-set__list type-list">
+              <li class="type-list__item">
+                <input class="form-set__input form-set__input--radio" id="interior" type="radio" name="type" value="accessory" checked>
+                <label class="form-set__label" for="interior">Аксессуар для интерьера</label>
+              </li>
+              <li class="type-list__item">
+                <input class="form-set__input form-set__input--radio" id="plaything" type="radio" name="type" value="toy">
+                <label class="form-set__label" for="plaything">Детская игрушка</label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="form-set__item">
+          <fieldset class="form-set__group">
             <legend class="form-set__title">Цвет</legend>
-            <label class="form-set__label">
-              <input class="form-set__item form-set__item--checkbox" type="checkbox" name="white" checked>
-              Белый
-            </label>
-            <label class="form-set__label">
-              <input class="form-set__item form-set__item--checkbox" type="checkbox" name="grey" checked>
-              Серый
-            </label>
-            <label class="form-set__label">
-              <input class="form-set__item form-set__item--checkbox" type="checkbox" name="tiffany">
-              «Тиффани»
-            </label>
-            <label class="form-set__label">
-              <input class="form-set__item form-set__item--checkbox" type="checkbox" name="black">
-              Черный
-            </label>
-            <label class="form-set__label">
-              <input class="form-set__item form-set__item--checkbox" type="checkbox" name="pink">
-              Розовый
-            </label>
-            <label class="form-set__label">
-              <input class="form-set__item form-set__item--checkbox" type="checkbox" name="orange">
-              Оранжевый
-            </label>
+            <ul class="form-set__list color-list">
+              <li class="color-list__item">
+                <input class="form-set__input form-set__input--checkbox" id="white-color" type="checkbox" name="white" checked>
+                <label class="form-set__label" for="white-color">Белый</label>
+              </li>
+              <li class="color-list__item">
+                <input class="form-set__input form-set__input--checkbox" id="grey-color" type="checkbox" name="grey" checked>
+                <label class="form-set__label" for="grey-color">Серый</label>
+              </li>
+              <li class="color-list__item">
+                <input class="form-set__input form-set__input--checkbox" id="tiffany-color" type="checkbox" name="tiffany">
+                <label class="form-set__label" for="tiffany-color">«Тиффани»</label>
+              </li>
+              <li class="color-list__item">
+                <input class="form-set__input form-set__input--checkbox" id="black-color" type="checkbox" name="black">
+                <label class="form-set__label" for="black-color">Черный</label>
+              </li>
+              <li class="color-list__item">
+                <input class="form-set__input form-set__input--checkbox" id="pink-color" type="checkbox" name="pink">
+                <label class="form-set__label" for="pink-color">Розовый</label>
+              </li>
+              <li class="color-list__item">
+                <input class="form-set__input form-set__input--checkbox" id="orange-color" type="checkbox" name="orange">
+                <label class="form-set__label" for="orange-color">Оранжевый</label>
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="form-set__item">
+          <fieldset class="form-set__group">
             <legend class="form-set__title">Фио</legend>
-            <label class="form-set__label">
-              Имя:
-              <input class="form-set__item form-set__item--text" type="text" placeholder="Введите ваше имя*" name="name" required>
-            </label>
-            <label class="form-set__label">
-              Фамилия:
-              <input class="form-set__item form-set__item--text" type="text" placeholder="Укажите фамилию*" name="surname" required>
-            </label>
-            <label class="form-set__label">
-              Отчество:
-              <input class="form-set__item form-set__item--text" type="text" placeholder="Отчество, если желаете" name="fathername">
-            </label>
+            <ul class="form-set__list name-list">
+              <li class="name-list__item">
+                <label class="form-set__label" for="first-name">Имя:</label>
+                <input class="form-set__input form-set__input--text" id="first-name" type="text" placeholder="Введите ваше имя*" name="name" required>
+              </li>
+              <li class="name-list__item">
+                <label class="form-set__label" for="second-name">Фамилия:</label>
+                <input class="form-set__input form-set__input--text" id="second-name" type="text" placeholder="Укажите фамилию*" name="surname" required>
+              </li>
+              <li class="name-list__item">
+                <label class="form-set__label" for="father-name">Отчество:</label>
+                <input class="form-set__input form-set__input--text" id="father-name" type="text" placeholder="Отчество, если желаете" name="fathername">
+              </li>
+            </ul>
           </fieldset>
-          <fieldset class="form-set__item">
+          <fieldset class="form-set__group">
             <legend class="form-set__title">Тел</legend>
-            <label class="visually-hidden">
-              Номер телефона
-              <input class="form-set__item form-set__item--text" type="tel" pattern="+[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
-            </label>
-            <svg class="form-set__item-icon" width="25" height="24">
+            <label class="visually-hidden" for="phone-number">Номер телефона</label>
+            <input class="form-set__input form-set__input--text" id="phone-number" type="tel" pattern="+[0-9]{1} [0-9]{3} [0-9]{3} [0-9]{2} [0-9]{2}" name="phone" placeholder="+7 ХХХ ХХХ ХХ ХХ*" required>
+            <svg class="form-set__label-icon" width="25" height="24">
               <use xlink:href="img/sprite.svg#icon-phone"></use>
             </svg>
           </fieldset>
-          <fieldset class="form-set__item">
+          <fieldset class="form-set__group">
             <legend class="form-set__title">E-mail</legend>
-            <label class="visually-hidden">
-              Адрес электронной почты
-              <input class="form-set__item form-set__item--text" type="email" name="email" placeholder="Ваш Email*" required>
-            </label>
-            <svg class="form-set__item-icon" width="32" height="21">
+            <label class="visually-hidden" for="e-mail">Адрес электронной почты</label>
+            <input class="form-set__input form-set__input--text" id="e-mail" type="email" name="email" placeholder="Ваш Email*" required>
+            <svg class="form-set__label-icon" width="32" height="21">
               <use xlink:href="img/sprite.svg#icon-mail"></use>
             </svg>
           </fieldset>
-          <fieldset class="form-set__item">
+          <fieldset class="form-set__group">
             <legend class="form-set__title">Доп</legend>
-            <textarea class="form-set__item form-set__item--comment" name="suggestion" rows="6" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <textarea class="form-set__textarea form-set__textarea--comment" name="suggestion" rows="6" placeholder="Опишите все ваши пожелания к заказу" aria-label="Добавить комментарий к заказу"></textarea>
           </fieldset>
           <p class="form-set__tip">*Поля обязательны для заполнения</p>
-          <input class="form-set__button button" type="submit" value="Отправить заказ">
+          <button class="form-set__button button" type="submit">Отправить заказ</button>
         </form>
       </section>
     </main>
@@ -156,7 +155,11 @@
         </div>
         <div class="page-footer__copyright copyright">
           <p class="copyright__text">Разработано</p>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__link-icon" width="27" height="34">
+              <use xlink:href="img/sprite.svg#icon-copyright"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
