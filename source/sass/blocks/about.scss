@@ -1,11 +1,22 @@
-.about__title {
+.about {
   font-weight: 700;
+  margin: 32px;
+}
+
+.about__title {
   font-size: 25px;
   line-height: 30px;
 }
 
+.about__list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .features-list__item {
-  font-weight: 700;
   font-size: 17px;
   line-height: 20px;
+  margin: 40px;
 }
