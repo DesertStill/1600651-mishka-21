@@ -1,13 +1,10 @@
 .main-navigation {
   font-weight: 700;
+  outline: 5px solid rgba(148, 60, 200, 0.8);
+  outline-offset: -5px;
 }
 
-.site-list__item a {
-  text-decoration: none;
-  color: $black;
-}
-
-.user-list__cart {
-  text-decoration: none;
-  color: $black;
+.main-navigation__list {
+  list-style: none;
+  padding: 0;
 }

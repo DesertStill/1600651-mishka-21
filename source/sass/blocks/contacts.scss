@@ -1,7 +1,14 @@
+.contacts {
+  padding-top: 40px;
+  padding-bottom: 42px;
+  text-align: left;
+}
+
 .contacts__title {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
+  margin-left: 30px;
 }
 
 .contacts__map {
@@ -9,10 +16,13 @@
 }
 
 .contacts__write-us {
+  display: block;
   font-weight: 700;
   font-size: 18px;
   line-height: 20px;
   border: 2px solid $dark;
+  padding: 16px 65px;
+  margin-top: 42px;
 }
 
 .contacts__table {
@@ -20,4 +30,9 @@
   font-size: 14px;
   line-height: 30px;
   color: $dark;
+}
+
+.contacts__definition {
+  padding-left: 30px;
+  vertical-align: text-bottom;
 }

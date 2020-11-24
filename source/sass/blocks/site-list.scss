@@ -1,0 +1,9 @@
+.site-list {
+  outline: 5px solid rgba(200, 60, 132, 0.8);
+  outline-offset: -5px;
+}
+
+.site-list__item a {
+  text-decoration: none;
+  color: $black;
+}
