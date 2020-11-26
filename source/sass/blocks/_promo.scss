@@ -1,24 +1,27 @@
 .promo {
-  font-weight: 400;
-  font-size: 15px;
-  line-height: 24px;
-  color: $dark;
   padding-left: 30px;
   text-align: center;
+  color: $dark;
   outline: 5px solid rgba(139, 113, 222, 0.8);
+}
+
+.promo__item {
+  @include subtitle;
+  color: $black;
 }
 
 .promo__title {
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
-  text-align: left;
   text-transform: uppercase;
+  text-align: left;
   color: $light-green;
 }
 
 .promo__description,
 .promo__table {
+  font-weight: 400;
   text-align: left;
 }
 
@@ -26,23 +29,13 @@
   margin-top: 30px;
 }
 
-.promo__item {
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
-  text-align: center;
-  color: $black;
-}
-
 .promo__price {
   font-weight: 700;
   font-size: 17px;
   line-height: 24px;
-  text-align: center;
 }
 
 .promo__button {
-  font-size: 18px;
-  line-height: 20px;
+  @include button-font;
   margin-top: 25px;
 }

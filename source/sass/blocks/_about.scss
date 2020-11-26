@@ -1,18 +1,16 @@
 .about {
-  font-weight: 700;
   margin: 32px;
   padding-bottom: 30px;
 }
 
 .about__title {
-  font-size: 25px;
-  line-height: 30px;
+  @include subtitle;
   margin-bottom: 0;
 }
 
 .about__list {
-  list-style: none;
   display: flex;
   flex-direction: column;
   padding-left: 0;
+  list-style: none;
 }

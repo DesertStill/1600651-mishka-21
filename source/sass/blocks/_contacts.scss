@@ -5,10 +5,10 @@
 }
 
 .contacts__title {
+  margin-left: 30px;
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
-  margin-left: 30px;
 }
 
 .contacts__map {
@@ -16,13 +16,11 @@
 }
 
 .contacts__write-us {
+  @include button-font;
   display: block;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 20px;
-  border: 2px solid $dark;
-  padding: 16px 65px;
   margin-top: 42px;
+  padding: 16px 65px;
+  border: 2px solid $dark;
 }
 
 .contacts__table {

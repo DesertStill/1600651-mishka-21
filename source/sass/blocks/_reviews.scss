@@ -1,12 +1,10 @@
 .reviews {
-  text-align: left;
   padding-bottom: 45px;
+  text-align: left;
 }
 
 .reviews__title {
-  font-weight: 700;
-  font-size: 25px;
-  line-height: 30px;
+  @include subtitle;
   margin-left: 40px;
 }
 
@@ -18,19 +16,18 @@
 }
 
 .reviews__author-name {
-  font-style: normal;
-  font-weight: 700;
-  font-size: 17px;
-  line-height: 24px;
   display: flex;
   flex-direction: column;
   margin-top: 33px;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 30px;
 }
 
 .reviews__author-nickname {
   font-weight: 400;
-  font-size: 17px;
-  line-height: 30px;
+  line-height: 24px;
   color: $dark;
 }
 
@@ -45,10 +42,9 @@
 }
 
 .reviews__write {
+  @include button-font;
   display: block;
-  font-size: 18px;
-  line-height: 20px;
-  border: 2px solid $dark;
   margin-top: 40px;
   padding: 16px 65px;
+  border: 2px solid $dark;
 }
