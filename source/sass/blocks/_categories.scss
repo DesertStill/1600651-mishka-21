@@ -1,0 +1,42 @@
+.categories {
+  padding-top: 90px;
+  text-align: center;
+  background: url("../img/toys.jpg") no-repeat center $light-grey;
+  background-size: cover;
+}
+
+.categories__title {
+  @include heading;
+  margin: auto 20px;
+}
+
+.categories__list {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 100px 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+.categories__item {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 24px;
+  text-align: left;
+}
+
+.categories__link {
+  display: block;
+  padding: 25px;
+  text-decoration: none;
+  color: $white;
+
+  &--interior {
+    background: $light-green;
+  }
+
+  &--toy {
+    background: $extra-green;
+  }
+}

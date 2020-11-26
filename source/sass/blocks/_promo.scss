@@ -1,0 +1,41 @@
+.promo {
+  padding-left: 30px;
+  text-align: center;
+  color: $dark;
+  outline: 5px solid rgba(139, 113, 222, 0.8);
+}
+
+.promo__item {
+  @include subtitle;
+  color: $black;
+}
+
+.promo__title {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  text-transform: uppercase;
+  text-align: left;
+  color: $light-green;
+}
+
+.promo__description,
+.promo__table {
+  font-weight: 400;
+  text-align: left;
+}
+
+.promo__image {
+  margin-top: 30px;
+}
+
+.promo__price {
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+}
+
+.promo__button {
+  @include button-font;
+  margin-top: 25px;
+}

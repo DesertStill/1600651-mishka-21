@@ -1,1 +1,21 @@
-// Начните писать стили здесь
+@import "base/_font-face.scss";
+@import "helpers/_variables.scss";
+@import "helpers/mixins.scss";
+@import "pages/_global.scss";
+@import "layout/_grid.scss";
+@import "components/_main-navigation.scss";
+@import "components/_site-list.scss";
+@import "components/_user-list.scss";
+@import "components/_button.scss";
+@import "components/_visually-hidden.scss";
+@import "blocks/_categories.scss";
+@import "blocks/_promo.scss";
+@import "blocks/_about.scss";
+@import "blocks/_features-list.scss";
+@import "blocks/_reviews.scss";
+@import "blocks/_contacts.scss";
+@import "blocks/_social.scss";
+@import "blocks/_copyright.scss";
+@import "layout/_page-header.scss";
+@import "layout/_page-main.scss";
+@import "layout/_page-footer.scss";
