@@ -1,8 +1,14 @@
 .promo {
-  padding-left: 30px;
+  display: flex;
+  flex-direction: column;
   text-align: center;
   color: $dark;
-  outline: 5px solid rgba(139, 113, 222, 0.8);
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .promo__item {
@@ -11,22 +17,42 @@
 }
 
 .promo__title {
+  margin: -20px 30px;
   font-weight: 700;
   font-size: 17px;
   line-height: 20px;
   text-transform: uppercase;
   text-align: left;
   color: $light-green;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
+
+.promo__description {
+  margin-top: 40px;
 }
 
 .promo__description,
 .promo__table {
+  margin-left: 30px;
   font-weight: 400;
   text-align: left;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 0;
+  }
+}
+
+.promo__table {
+  margin-top: 10px;
 }
 
 .promo__image {
   margin-top: 30px;
+  margin-left: 30px;
 }
 
 .promo__price {
@@ -36,6 +62,7 @@
 }
 
 .promo__button {
-  @include button-font;
   margin-top: 25px;
+
+  @include button-font;
 }

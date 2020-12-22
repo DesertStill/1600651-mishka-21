@@ -1,0 +1,39 @@
+.additional-navigation {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    display: block;
+  }
+}
+
+.additional-navigation__list {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  display: flex;
+  list-style: none;
+}
+
+.additional-navigation__item {
+  font-weight: 700;
+}
+
+.additional-navigation__list li:nth-child(2) {
+  margin-left: 20px;
+}
+
+.additional-navigation__item a {
+  text-decoration: none;
+  color: $black;
+}
+
+.additional-navigation__info {
+  display: none;
+
+  @media (min-width: $desktop-width) {
+    position: absolute;
+    top: 120px;
+    left: 850px;
+    display: block;
+  }
+}

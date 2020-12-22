@@ -1,7 +1,17 @@
 .main-navigation {
   font-weight: 700;
-  outline: 5px solid rgba(148, 60, 200, 0.8);
-  outline-offset: -5px;
+
+  @media (min-width: $desktop-width) {
+    grid-column: 1 / -1;
+    grid-row: 1 / 1;
+  }
+}
+
+.main-navigation__wrapper {
+  @media (min-width: $desktop-width) {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 .main-navigation__list {
