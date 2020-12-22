@@ -3,20 +3,30 @@
   text-align: center;
   background: url("../img/toys.jpg") no-repeat center $light-grey;
   background-size: cover;
+
+  @media (min-width: $tablet-width) {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
 }
 
 .categories__title {
-  @include heading;
   margin: auto 20px;
+
+  @include heading;
 }
 
 .categories__list {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 100px 0;
+  margin-top: 115px;
   padding-left: 0;
   list-style: none;
+
+  @media (min-width: $tablet-width) {
+    flex-direction: row;
+  }
 }
 
 .categories__item {
@@ -38,5 +48,13 @@
 
   &--toy {
     background: $extra-green;
+  }
+
+  @media (min-width: $tablet-width) {
+    padding-right: 130px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-right: 300px;
   }
 }

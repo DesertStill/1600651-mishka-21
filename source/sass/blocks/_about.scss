@@ -4,8 +4,9 @@
 }
 
 .about__title {
-  @include subtitle;
   margin-bottom: 0;
+
+  @include subtitle;
 }
 
 .about__list {

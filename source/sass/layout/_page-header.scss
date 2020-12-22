@@ -1,8 +1,34 @@
 .page-header {
+  display: flex;
+  justify-content: flex-end;
+
   @include page-font;
+
+  color: $black;
+
+  @media (min-width: $tablet-width) {
+    display: grid;
+    grid-template-columns: 1fr 396px;
+  }
+
+  @media (min-width: $desktop-width) {
+    display: grid;
+    grid-template-columns: 1fr 150px 1fr;
+    grid-template-rows: auto;
+  }
 }
 
 .page-header__logo {
-  outline: 5px solid rgba(81, 120, 194, 0.8);
-  outline-offset: -5px;
+  height: 80px;
+
+  @media (min-width: $tablet-width) {
+    height: 90px;
+  }
+
+  @media (min-width: $desktop-width) {
+    grid-column: 2 / 3;
+    grid-row: 1 / 1;
+    z-index: 2;
+    height: 90px;
+  }
 }

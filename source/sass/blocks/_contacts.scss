@@ -16,10 +16,11 @@
 }
 
 .contacts__write-us {
-  @include button-font;
   display: block;
   margin-top: 42px;
   padding: 16px 65px;
+
+  @include button-font;
   border: 2px solid $dark;
 }
 
